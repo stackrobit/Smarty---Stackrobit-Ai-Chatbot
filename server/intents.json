@@ -1,0 +1,22 @@
+[
+  {
+    "name": "greeting",
+    "keywords": ["hello", "hi", "hey", "help"],
+    "reply": "Hello! 👋 How can I assist you today?"
+  },
+  {
+    "name": "pricing",
+    "keywords": ["price", "pricing", "cost"],
+    "reply": "Our pricing depends on the package you choose. Tell me what service you need?"
+  },
+  {
+    "name": "services",
+    "keywords": ["services", "what you do"],
+    "reply": "We provide Web Development, App Development, Digital Marketing, AI Chatbots & Branding 🚀"
+  },
+  {
+    "name": "support",
+    "keywords": ["support", "issue", "problem"],
+    "reply": "I'm here to help! Can you describe your issue?"
+  }
+]
