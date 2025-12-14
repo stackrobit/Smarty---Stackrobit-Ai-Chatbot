@@ -1,7 +1,7 @@
 let sessionId = localStorage.getItem("sessionId") || null;
 
 // 👇 Add your backend API URL here
-const API_URL = "https://smarty-stackrobits-ai-chatbot.onrender.com";
+const API_URL = "https://smarty-767i.onrender.com/";
 
 async function sendMessage() {
   const input = document.getElementById("input");
@@ -37,4 +37,5 @@ document.getElementById("sendBtn").addEventListener("click", sendMessage);
 document.getElementById("input").addEventListener("keydown", (e) => {
   if (e.key === "Enter") sendMessage();
 });
+
 
