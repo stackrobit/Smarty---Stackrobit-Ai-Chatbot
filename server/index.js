@@ -8,7 +8,6 @@ const rateLimit = require("express-rate-limit");
 const fetch = (...args) =>
   import("node-fetch").then(({ default: f }) => f(...args));
 const { v4: uuidv4 } = require("uuid");
-import cors from "cors";
 
 app.use(cors({
   origin: [
@@ -171,6 +170,7 @@ app.get("*", (req, res) => {
 });
 
 app.listen(3000, () => console.log("🚀 Server running on port 3000"));
+
 
 
 
