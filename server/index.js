@@ -9,13 +9,6 @@ const fetch = (...args) =>
   import("node-fetch").then(({ default: f }) => f(...args));
 const { v4: uuidv4 } = require("uuid");
 
-app.use(cors({
-  origin: [
-    "https://smarty-767i.onrender.com"
-  ],
-  methods: ["GET", "POST"],
-  credentials: true
-}));
 
 // your intent keywords
 const intents = require("./intents.json");
@@ -27,6 +20,14 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use(cors({
+  origin: [
+    "https://smarty-767i.onrender.com"
+  ],
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 
 // Rate limiting
 app.use(
@@ -170,6 +171,7 @@ app.get("*", (req, res) => {
 });
 
 app.listen(3000, () => console.log("🚀 Server running on port 3000"));
+
 
 
 
